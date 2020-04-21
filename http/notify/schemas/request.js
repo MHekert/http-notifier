@@ -1,6 +1,6 @@
 const body = {
-    type: 'object',
-    required: ['message'],
+	type: 'object',
+	required: ['message'],
 	properties: {
 		title: { type: 'string' },
 		subtitle: { type: 'string' },
@@ -22,6 +22,6 @@ const body = {
 	additionalProperties: false,
 };
 
-const request = { body }
+const request = { body };
 
 module.exports = request;
