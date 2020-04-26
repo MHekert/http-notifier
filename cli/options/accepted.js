@@ -1,4 +1,4 @@
-const options = [
+const acceptedOptions = [
 	'title',
 	'subtitle',
 	'message',
@@ -15,4 +15,4 @@ const options = [
 	'sound',
 ];
 
-module.exports = options;
+module.exports = { acceptedOptions };
