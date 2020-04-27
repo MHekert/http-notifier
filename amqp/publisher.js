@@ -1,12 +1,7 @@
 const amqplib = require('amqplib');
 const { rabbit } = require('../config');
 
-const publish = async (
-	data,
-	queueName = rabbit.queueName,
-	options = rabbit.options,
-	url = rabbit.url
-) => {
+const publish = async (data, queueName = rabbit.queueName, url = rabbit.url, options = {}) => {
 	const conn = await amqplib.connect(url);
 	const channel = await conn.createConfirmChannel();
 	const queue = await channel.assertQueue(queueName);

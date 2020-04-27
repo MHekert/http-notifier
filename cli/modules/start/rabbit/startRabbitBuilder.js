@@ -1,66 +1,8 @@
 const { appendExamples } = require('../../../util');
-const { rabbit } = require('../../../../config');
+const { rabbitConnectionOptions } = require('../../../options/rabbitConnectionOptions');
 
 const startRabbitBuilder = (yargs) => {
-	yargs.options({
-		p: {
-			alias: 'port',
-			describe: "RabbitMQ's port",
-			type: 'number',
-			default: rabbit.options.port,
-		},
-		q: {
-			alias: 'queue',
-			descirbe: 'Queue name',
-			type: 'string',
-			default: rabbit.queueName,
-		},
-		url: {
-			descibe: "RabbitMQ's url",
-			type: 'string',
-		},
-		password: {
-			descibe: 'Password',
-			default: rabbit.options.password,
-			type: 'string',
-		},
-		username: {
-			descibe: 'Username',
-			default: rabbit.options.username,
-			type: 'string',
-		},
-		protocol: {
-			descibe: 'protocol',
-			default: rabbit.options.protocol,
-			type: 'string',
-		},
-		hostname: {
-			descibe: 'hostname',
-			default: rabbit.options.hostname,
-			type: 'string',
-		},
-		locale: {
-			descibe: 'locale',
-			default: rabbit.options.locale,
-			type: 'string',
-		},
-		vhost: {
-			descibe: 'vhost',
-			default: rabbit.options.vhost,
-			type: 'string',
-		},
-		frameMax: {
-			descibe: 'frameMax',
-			default: rabbit.options.frameMax,
-			type: 'number',
-		},
-		heartbeat: {
-			descibe: 'heartbeat',
-			default: rabbit.options.heartbeat,
-			type: 'number',
-		},
-	});
-
+	yargs.options(rabbitConnectionOptions);
 	appendExamples(yargs, 'start.rabbit');
 };
 
