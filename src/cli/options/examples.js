@@ -8,7 +8,14 @@ const examples = {
 	],
 	start: {
 		http: [['$0 start http -p 8080', 'starts http server on port 8080']],
+		rabbit: [['$0 start rabbit -q myqueue', 'starts consuming messages from queue named myqueue']],
 	},
+	rabbit: [
+		[
+			'$0 start publish -q myqueue -m "I might have published this a long time ago"',
+			'publishes message to queue named myqueue',
+		],
+	],
 };
 
 module.exports = { examples };
