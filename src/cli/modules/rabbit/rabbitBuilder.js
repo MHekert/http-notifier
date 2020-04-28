@@ -1,4 +1,4 @@
-const { rabbitConnectionOptions } = require('../../options/rabbitConnectionOptions');
+const { rabbitConnectionOptions } = require('../../options');
 const { notificationOptions } = require('../../options/notification');
 const { appendExamples } = require('../../util');
 

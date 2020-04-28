@@ -1,5 +1,5 @@
 const { appendExamples } = require('../../../util');
-const { rabbitConnectionOptions } = require('../../../options/rabbitConnectionOptions');
+const { rabbitConnectionOptions } = require('../../../options');
 
 const startRabbitBuilder = (yargs) => {
 	yargs.options(rabbitConnectionOptions);
