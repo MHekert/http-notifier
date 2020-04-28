@@ -1,4 +1,4 @@
-const notify = require('../../src/notify');
+const notify = require('../../notify');
 
 const handler = async (req, reply) => {
 	try {

@@ -1,4 +1,4 @@
-const { rabbit } = require('../../config');
+const { rabbit } = require('../../../config');
 
 const rabbitConnectionOptions = {
 	p: {

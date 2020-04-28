@@ -1,6 +1,6 @@
 const { getNotificationParams } = require('../../util');
 
-const remoteNotification = require('../../../src/remoteNotification');
+const remoteNotification = require('../../../remoteNotification');
 
 const httpHandler = async (argv) => {
 	try {

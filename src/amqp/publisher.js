@@ -1,5 +1,5 @@
 const amqplib = require('amqplib');
-const { rabbit } = require('../config');
+const { rabbit } = require('../../config');
 
 const publish = async (data, queueName = rabbit.queueName, url = rabbit.url, options = {}) => {
 	const conn = await amqplib.connect(url);

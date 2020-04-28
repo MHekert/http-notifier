@@ -1,7 +1,7 @@
 const { pick } = require('lodash');
 const {
 	rabbit: { options },
-} = require('../../config');
+} = require('../../../config');
 
 const connectBy = (argv) => argv.url ?? pick(argv, Object.keys(options));
 

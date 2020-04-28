@@ -1,5 +1,5 @@
 const { getNotificationParams } = require('../../util');
-const notify = require('../../../src/notify');
+const notify = require('../../../notify');
 
 const localHandler = async (argv) => {
 	try {

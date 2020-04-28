@@ -1,3 +1,3 @@
-const { buildCLI } = require('./cli');
+const { buildCLI } = require('./src/cli');
 
 buildCLI();

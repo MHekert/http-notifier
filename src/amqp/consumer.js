@@ -1,6 +1,6 @@
 const amqplib = require('amqplib');
-const notify = require('../src/notify');
-const { rabbit } = require('../config');
+const notify = require('../notify');
+const { rabbit } = require('../../config');
 
 const consume = async (queueName = rabbit.queueName, url = rabbit.url) => {
 	const conn = await amqplib.connect(url);

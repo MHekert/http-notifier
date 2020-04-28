@@ -1,5 +1,5 @@
 const { appendExamples } = require('../../../util');
-const { http } = require('../../../../config');
+const { http } = require('../../../../../config');
 
 const startHttpBuilder = (yargs) => {
 	yargs.options({
