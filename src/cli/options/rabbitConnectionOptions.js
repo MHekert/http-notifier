@@ -7,12 +7,6 @@ const rabbitConnectionOptions = {
 		type: 'number',
 		default: rabbit.options.port,
 	},
-	q: {
-		alias: 'queue',
-		descirbe: 'Queue name',
-		type: 'string',
-		default: rabbit.queueName,
-	},
 	url: {
 		descibe: "RabbitMQ's url",
 		type: 'string',

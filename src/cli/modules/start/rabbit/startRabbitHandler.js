@@ -3,7 +3,7 @@ const { connectBy } = require('../../../util');
 
 const startRabbitHandler = async (argv) => {
 	try {
-		await consume(argv.queue, connectBy(argv));
+		await consume(argv.queue, connectBy(argv), argv.prefetch);
 	} catch (error) {
 		console.error(error.message);
 	}

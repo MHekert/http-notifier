@@ -14,7 +14,7 @@ module.exports = {
 			heartbeat: 0,
 			vhost: '/',
 		},
-		queueName: 'notifier',
+		queueNames: ['notifier'],
 	},
 	http: {
 		port: 3000,
